@@ -10,14 +10,9 @@
 #include "state.h"
 #include <stdio.h>
 #include "driver.h"
-enum{
-	alarm_monitor_waiting,
-	alarm_monitor_alarm_on,
-	alarm_monitor_alarm_off
 
-}id_alarm_monitor;
 STATE_define(alarm_monitor_waiting);
 STATE_define(alarm_monitor_alarm_on);
 STATE_define(alarm_monitor_alarm_off);
-void(*alarm_monitor_states)();
+extern void(*alarm_monitor_states)();
 #endif /* ALARMMONITOR_H_ */

@@ -12,6 +12,10 @@ Project_Name=Learn-in-depth-first_term_project_1
 all:$(Project_Name).bin
 	@echo "       ======= Build done ======"
  
+$(Project_Name).hex: $(Project_Name).elf
+	$(CC)objcopy.exe -O ihex $(Project_Name).elf $(Project_Name).hex
+
+
 $(Project_Name).bin: $(Project_Name).elf
 	$(CC)objcopy.exe -O binary $(Project_Name).elf $(Project_Name).bin
 

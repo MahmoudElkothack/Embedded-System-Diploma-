@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+    988	      4	   4133	   5125	   1405	Learn-in-depth-first_term_project_1.elf

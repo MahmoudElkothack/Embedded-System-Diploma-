@@ -6,6 +6,14 @@
  */
 #include "AlarmMonitor.h"
 
+enum{
+	alarm_monitor_waiting,
+	alarm_monitor_alarm_on,
+	alarm_monitor_alarm_off
+
+}id_alarm_monitor;
+
+void(*alarm_monitor_states)();
 
 STATE_define(alarm_monitor_waiting){
 	//printf("state = alarm_monitor_waiting");

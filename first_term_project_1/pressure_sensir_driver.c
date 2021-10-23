@@ -7,6 +7,16 @@
 #include "pressure_sensor_driver.h"
 
 int pressure=0;
+void (*Pressure_state)();
+
+enum{
+
+	pressure_driver_read,
+	pressure_driver_waiting
+
+}id_pressure_driver_states;
+
+
 void init(){
 	//init stuff for driver
 //printf("init state");

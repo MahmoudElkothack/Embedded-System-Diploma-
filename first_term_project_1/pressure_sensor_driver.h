@@ -15,16 +15,11 @@
 
 
 
-enum{
 
-	pressure_driver_read,
-	pressure_driver_waiting
-
-}id_pressure_driver_states;
 void init();
 	//init stuff for driver
 //void Read_pressure();
 STATE_define(pressure_driver_read);
 STATE_define(pressure_driver_waiting);
-void (*Pressure_state)();
+extern void (*Pressure_state)();
 #endif /* PRESSURE_SENSOR_DRIVER_H_ */

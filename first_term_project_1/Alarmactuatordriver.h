@@ -12,17 +12,11 @@
 #include "driver.h"
 #include <stdio.h>
 
- enum{
 
-	alarm_on,
-	alarm_off,
-	waiting
-
-}id_alarm_actuator;
 
 void init();
 STATE_define(alarm_on);
 STATE_define(alarm_off);
 STATE_define(waiting);
- void (*alarm_actuator_states)();
+extern void (*alarm_actuator_states)();
 #endif /* ALARMACTUATORDRIVER_H_ */

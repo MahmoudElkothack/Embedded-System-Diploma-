@@ -5,6 +5,14 @@
  *      Author: mahmoud elkot
  */
 #include "Alarmactuatordriver.h"
+void (*alarm_actuator_states)();
+ enum{
+
+	alarm_on,
+	alarm_off,
+	waiting
+
+}id_alarm_actuator;
 void inti (){
 	// init driver
 
