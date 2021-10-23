@@ -1,0 +1,3 @@
+1 Mahmoud Elkot 3 1 3 4 7 9
+7 ahmed ibrahim 3.5 1 10 9 6 5
+6 ali mohamed 2.5 1 2 3 4 35
