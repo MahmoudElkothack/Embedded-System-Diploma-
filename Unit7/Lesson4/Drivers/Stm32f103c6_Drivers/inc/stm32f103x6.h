@@ -1,8 +1,8 @@
 /*
  * stm32f103x6.h
  *
- *  Created on: Sep 18, 2021
- *      Author: hassan
+ *  Created on:19/11/2021
+ *      Author: Mahmoud Elkot
  */
 
 #ifndef INC_STM32F103X6_H_
